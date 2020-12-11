@@ -11,6 +11,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(UsersTableSeeder::class);
+
+        $seeders = array ('RoleSeeder', 'UserSeeder');
+
+        foreach ($seeders as $seeder)
+        {
+            $this->call($seeder);
+        }
+
     }
 }
