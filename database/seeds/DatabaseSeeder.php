@@ -12,7 +12,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
 
-        $seeders = array ('RoleSeeder', 'UserSeeder');
+        $seeders = array ('RoleSeeder', 'UserSeeder','ProductSeeder');
 
         foreach ($seeders as $seeder)
         {
